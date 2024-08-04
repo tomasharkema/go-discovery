@@ -2,8 +2,8 @@
 inputs:
   nixpkgs:
     url: github:cachix/devenv-nixpkgs/rolling
-  gotk4-nix:
-    url: github:diamondburned/gotk4-nix
+  # gotk4-nix:
+  #   url: github:diamondburned/gotk4-nix
 # If you're using non-OSS software, you can set allowUnfree to true.
 # allowUnfree: true
 
