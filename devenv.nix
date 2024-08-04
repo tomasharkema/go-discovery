@@ -8,11 +8,15 @@
   env.CGO_ENABLED = 1;
 
   packages = with pkgs; [
+    gtk4
+    gtk3
+    gobject-introspection
+    pkg-config
     gcc
     glib
-    pkg-config
+
     cairo
-    gobject-introspection
+
     golangci-lint
     golangci-lint-langserver
     graphene
