@@ -5,16 +5,25 @@
   inputs,
   ...
 }: {
+  env.CGO_ENABLED = 1;
+
   packages = with pkgs; [
+    gcc
     glib
     pkg-config
     cairo
     gobject-introspection
+    golangci-lint
+    golangci-lint-langserver
+    graphene
   ];
 
   # https://devenv.sh/languages/
   languages = {
-    go.enable = true;
+    go = {
+      enable = true;
+      package = pkgs.go_1_22;
+    };
   };
 
   # https://devenv.sh/pre-commit-hooks/
